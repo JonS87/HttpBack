@@ -1,0 +1,23 @@
+{
+  "name": "helpdesc",
+  "version": "1.0.0",
+  "description": "![CI](https://github.com/JonS87/HTTPBackend/actions/workflows/web.yml/badge.svg) # Домашнее задание к занятию \"7. Работа с HTTP\"",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
+  },
+  "author": "coursar",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "forever": "^1.0.1",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.4.1",
+    "koa-router": "^12.0.1"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
