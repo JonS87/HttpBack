@@ -1,4 +1,3 @@
-![CI](https://github.com/JonS87/HttpBack/actions/workflows/web.yml/badge.svg)
 # Домашнее задание к занятию "7. Работа с HTTP"
 
 Правила сдачи задания:

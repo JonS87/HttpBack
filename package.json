@@ -6,17 +6,7 @@
   "scripts": {
     "prestart": "npm install",
     "start": "forever server.js",
-    "watch": "forever -w server.js",
-    "build": "webpack --mode production",
-    "lint": "eslint .",
-    "test": "jest --testPathPattern=./src/ --env=jsdom --passWithNoTests",
-    "coverage": "jest --testPathPattern=./src/ --coverage --env=jsdom --passWithNoTests",
-    "e2e": "jest --detectOpenHandles --testPathPattern=./src/js/__tests__/e2e/ --runInBand",
-    "doc": "jsdoc -c jsdoc.conf.json",
-    "preshow:coverage": "npm run coverage",
-    "show:coverage": "live-server coverage/lcov-report",
-    "preshow:dist": "npm run build",
-    "show:dist": "http-server dist"
+    "watch": "forever -w server.js"
   },
   "author": "coursar",
   "license": "ISC",
@@ -25,35 +15,6 @@
     "forever": "^1.0.1",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.4.1",
-    "koa-router": "^12.0.1",
-    "@babel/cli": "^7.24.1",
-    "@babel/core": "^7.24.4",
-    "@babel/preset-env": "^7.24.4",
-    "@eslint/js": "^9.0.0",
-    "@types/jest": "^29.5.12",
-    "babel-loader": "^9.1.3",
-    "child_process": "^1.0.2",
-    "css-loader": "^7.1.1",
-    "css-minimizer-webpack-plugin": "^6.0.0",
-    "eslint": "^9.0.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-jest": "^28.2.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "globals": "^15.0.0",
-    "html-loader": "^5.0.0",
-    "html-webpack-plugin": "^5.6.0",
-    "http-server": "^14.1.1",
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0",
-    "mini-css-extract-plugin": "^2.9.0",
-    "prettier": "^3.2.5",
-    "puppeteer": "^22.10.0",
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4",
-    "webpack-merge": "^5.10.0"
-  },
-  "engines": {
-    "node": "12.x"
+    "koa-router": "^12.0.1"
   }
 }
